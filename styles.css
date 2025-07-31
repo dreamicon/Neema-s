@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fff6e6, #ffd6e0);
+    font-family: 'Quicksand', sans-serif;
+    color: #5a3d5a;
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    animation: fadeIn 2s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #e67e7e;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message-box {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  #dynamic-message {
+    font-size: 1.2rem;
+    min-height: 60px;
+    animation: pulse 5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0.9; }
+    50% { opacity: 1; }
+    100% { opacity: 0.9; }
+  }
+  
+  button {
+    background: #e67e7e;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 1rem;
+    transition: all 0.3s;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  button:hover {
+    background: #d35d5d;
+    transform: scale(1.05);
+  }
+  
+  .poem {
+    font-style: italic;
+    line-height: 1.8;
+    margin: 2rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .music-player {
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  footer {
+    margin-top: 3rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.3rem;
+    color: #e67e7e;
+  }
+  
+  /* Confetti animation (triggered via JS) */
+  .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #f0f;
+    animation: confetti 5s ease-in-out infinite;
+  }
+  
+  @keyframes confetti {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+  }
